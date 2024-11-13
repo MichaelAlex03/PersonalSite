@@ -1,29 +1,55 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import {Link} from 'react-scroll'
+import AboutMe from './aboutMe';
+import Projects from './projects';
+import Contact from './contact';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Home = () => {
-  return (
-    <div className='bg-[#222831] h-screen flex justify-center'>
-        <div className='flex flex-col text-white justify-center items-center w-3/4 gap-2'>
-            <h1 className='text-3xl font-bold'>Hi, I'm <span className='text-[#00ADB5]'>Michael</span></h1>
-            <h3 className='text-center'>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
-            <div className='mt-2'>
-                <button className='border-2 border-white rounded-md py-2 px-3 flex items-center gap-2'
-                onClick={() => {
-                    console.log('rooot')
-                    const aboutMeLink = document.getElementById('aboutMe');
-                    if (aboutMeLink) {
-                        aboutMeLink.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }}>
-                        Check out My Work
-                        <i className='bx bx-down-arrow-alt'></i>
-                </button>
+
+    const handleClick = (div: string) => {
+        document.getElementById(div)?.scrollIntoView({behavior: 'smooth'});
+    }
+
+    return (
+        <>
+            <div className='fixed top-0 left-0 w-full'>
+                <Navbar />
             </div>
-        </div>
-    </div>
-  )
+
+            <div className='bg-[#222831] h-screen flex justify-center' id='home'>
+                <div className='flex flex-col text-white justify-center items-center w-3/4 gap-2'>
+                    <h1 className='text-3xl font-bold'>Hi, I'm <span className='text-[#00ADB5]'>Michael</span></h1>
+                    <h3 className='text-center'>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
+                    <div className='mt-2'>
+                        <button className='border-2 border-white rounded-md py-2 px-3 flex items-center gap-2'
+                            onClick={() => handleClick('aboutMe')}>
+                            Check out My Work
+                            <i className='bx bx-down-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id='aboutMe'>
+                <AboutMe />
+            </div>
+
+            <div id='Projects'>
+                <Projects />
+            </div>
+
+            <div id='Contact'>
+                <Contact />
+            </div>
+
+            <div>
+                <Footer />
+            </div>
+        </>
+        
+    )
 }
 
 export default Home
