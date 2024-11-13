@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 const AboutMe = () => {
   return (
     <>
-      <div className='h-screen bg-[#222831] text-white w-full py-20 p-8 flex flex-col lg:flex-row items-center'>
+      <div className='h-screen bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col lg:flex-row items-center'>
         <div className='flex flex-col items-center gap-4 w-5/6 mt-20'>
           <h1 className='text-4xl font-bold'>About Me</h1>
           <p className='text-center sm:text-sm md:text-base 2xl:w-2/3'>I am an aspiring full-stack software developer with a recent bachelor’s degree in computer science from Texas State University. 

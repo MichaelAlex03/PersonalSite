@@ -9,18 +9,17 @@ const Home = () => {
             <h1 className='text-3xl font-bold'>Hi, I'm <span className='text-[#00ADB5]'>Michael</span></h1>
             <h3 className='text-center'>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
             <div className='mt-2'>
-                <Link to='aboutMe'
-                            spy={true} 
-                            smooth={true} 
-                            offset={0} 
-                            duration={500}
-                            onClick={() => console.log('Link clicked!')}
-                        >
-                    <button className='border-2 border-white rounded-md py-2 px-3 flex items-center gap-2'>
-                        Check Out My Work
+                <button className='border-2 border-white rounded-md py-2 px-3 flex items-center gap-2'
+                onClick={() => {
+                    console.log('rooot')
+                    const aboutMeLink = document.getElementById('aboutMe');
+                    if (aboutMeLink) {
+                        aboutMeLink.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }}>
+                        Check out My Work
                         <i className='bx bx-down-arrow-alt'></i>
-                    </button>
-                </Link> 
+                </button>
             </div>
         </div>
     </div>

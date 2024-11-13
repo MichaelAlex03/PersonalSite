@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 @layer utilities{
-  
+  .nav{
+    @apply relative tracking-[1px]
+  }
+
+  /*Creates the underline for each navlink after the navlink has been hovered over. Width of underline starts at 0 and goes to 100% over 300ms time duration*/
+  .nav::after{
+    @apply content-[''] bg-sky-300 h-[3px] w-[0] left-0 -bottom-[5px] rounded-xl absolute duration-300
+  }
+
+
+  .nav:hover::after{
+    @apply w-[100%]
+  }
 }
