@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='fixed top-0 left-0 w-full'>
+            <div className='fixed top-0 left-0 w-full z-[1000]'>
                 <Navbar />
             </div>
 
@@ -40,13 +40,11 @@ const Home = () => {
                 <Projects />
             </div>
 
-            <div id='Contact'>
+            <div className='relative' id='Contact'>
                 <Contact />
-            </div>
-
-            <div>
                 <Footer />
             </div>
+
         </>
         
     )
