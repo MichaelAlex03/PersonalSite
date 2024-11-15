@@ -51,7 +51,7 @@ const Contact = () => {
   }
   
   return (
-    <div className='h-screen bg-[#222831] text-white py-20 px-8 flex flex-col items-center'>
+    <div className='h-screen bg-[#222831] text-white py-32 px-8 flex flex-col items-center'>
 
 
       <div className='flex flex-col gap-10 items-center'>
@@ -82,7 +82,7 @@ const Contact = () => {
           <input className='rounded-sm text-black p-2'
             type='text'
             name='user_email'
-            placeholder='Email'
+            placeholder='Email*'
             value={formData.user_email}
             onChange={handleChange}/>
         </div>
