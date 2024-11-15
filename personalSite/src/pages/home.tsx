@@ -18,9 +18,9 @@ const Home = () => {
             </div>
 
             <div className='bg-[#222831] h-screen flex justify-center' id='home'>
-                <div className='flex flex-col text-white justify-center items-center w-3/4 gap-2'>
-                    <h1 className='text-3xl font-bold'>Hi, I'm <span className='text-[#00ADB5]'>Michael</span></h1>
-                    <h3 className='text-center'>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
+                <div className='flex flex-col text-white justify-center items-center w-3/4 md:w-1/3 gap-2'>
+                    <h1 className='text-4xl font-bold'>Hi, I'm <span className='text-[#00ADB5]'>Michael</span></h1>
+                    <h3 className='text-center text-base md:text-2xl'>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
                     <div className='mt-2'>
                         <button className='border-2 border-white rounded-md py-2 px-3 flex items-center gap-2'
                             onClick={() => handleClick('aboutMe')}>

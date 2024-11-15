@@ -51,22 +51,21 @@ const Contact = () => {
   }
   
   return (
-    <div className='h-screen bg-[#222831] text-white py-32 px-8 flex flex-col items-center'>
+    <div className='h-screen bg-[#222831] text-white py-20 px-8 flex flex-col items-center'>
 
 
-      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col gap-10 items-center'>
         <div className='flex flex-col items-center'>
           <h1 className='font-bold text-4xl'>Contact Me</h1>
           <div className='border-[3px] border-sky-300 w-1/3 mt-1'></div>
         </div>
 
         <div className='flex items-center gap-2 justify-center w-full'>
-          <h1 className='font-bold'>Want to collaborate? Write me a message</h1>
-          <i className='bx bxs-hand-down'></i>
+          <h1 className='font-bold text-center'>Want to collaborate? Write me a message <i className='bx bxs-hand-down md:flex justify-center md:mt-2'></i></h1>
         </div>
       </div>
 
-      <form ref={form} className='flex flex-col gap-2 items-center w-4/5 md:w-1/3 mt-10' onSubmit={sendEmail}>
+      <form ref={form} className='flex flex-col gap-2 items-center w-4/5 md:w-1/3' onSubmit={sendEmail}>
         
         <div className='flex flex-col w-full'>
           <label htmlFor='user_name'>Your Name</label>
@@ -83,7 +82,7 @@ const Contact = () => {
           <input className='rounded-sm text-black p-2'
             type='text'
             name='user_email'
-            placeholder='Email*'
+            placeholder='Email'
             value={formData.user_email}
             onChange={handleChange}/>
         </div>
