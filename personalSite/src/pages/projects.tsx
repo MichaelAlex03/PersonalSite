@@ -4,7 +4,7 @@ const Projects = () => {
   return (
       <div className='min-h-screen bg-[#222831] text-white flex flex-col py-20 px-4 items-center gap-8 w-full'>
 
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center mt-5'>
           <h1 className='font-bold text-4xl'>Projects</h1>
           <div className='border-[3px] border-sky-300 w-1/2 mt-1'></div>
         </div>

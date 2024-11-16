@@ -51,7 +51,7 @@ const Contact = () => {
   }
   
   return (
-    <div className='h-screen bg-[#222831] text-white py-32 px-8 flex flex-col items-center'>
+    <div className='h-screen bg-[#222831] text-white py-20 md:py-32 px-8 flex flex-col items-center'>
 
 
       <div className='flex flex-col gap-10 items-center'>
