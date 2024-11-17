@@ -51,13 +51,13 @@ const Contact = () => {
   }
   
   return (
-    <div className='h-screen bg-[#222831] text-white py-20 md:py-32 px-8 flex flex-col items-center'>
+    <div className='h-screen bg-[#222831] text-white py-20 md:py-32 px-8 flex flex-col items-center gap-4'>
 
 
-      <div className='flex flex-col gap-10 items-center'>
+      <div className='flex flex-col gap-5 items-center'>
         <div className='flex flex-col items-center'>
-          <h1 className='font-bold text-4xl'>Contact Me</h1>
-          <div className='border-[3px] border-sky-300 w-1/3 mt-1'></div>
+          <h1 className='text-4xl xl:text-6xl font-bold'>Contact Me</h1>
+          <div className='border-[3px] xl:border-[4px] border-sky-300 w-1/3 mt-1'></div>
         </div>
 
         <div className='flex items-center gap-2 justify-center w-full'>
