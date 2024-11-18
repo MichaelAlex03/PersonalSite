@@ -17,6 +17,7 @@ const Contact = () => {
     message: ""
   })
 
+
   const form = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement> |  React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -44,6 +45,7 @@ const Contact = () => {
             user_email:"",
             message:""
           });
+
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -102,13 +104,13 @@ const Contact = () => {
           required>
           </textarea>
         </div>
-        <p className='w-full flex flex-start text-sm md:text-base lg:text-lg mb-1'>* Required</p>
 
         <div className='z-10 w-full mt-3 flex justify-center'>
           <button type='submit' className='button_sub w-full md:w-1/2 xl:w-1/2 py-1 rounded-sm'>
             Send
           </button>
         </div>
+
       </form>
     </div>
   )
