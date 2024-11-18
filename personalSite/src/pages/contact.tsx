@@ -97,8 +97,8 @@ const Contact = () => {
         </div>
         <p className='w-full flex flex-start text-sm md:text-base lg:text-lg mb-1'>* Required</p>
 
-        <div className='w-full mt-3'>
-          <button type='submit' className='border-2 border-white w-full py-1 rounded-sm'>
+        <div className='z-10 w-full mt-3 flex justify-center '>
+          <button type='submit' className='button_sub w-full md:w-1/2 xl:w-1/2 py-1 rounded-sm'>
             Send
           </button>
         </div>

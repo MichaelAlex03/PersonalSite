@@ -27,8 +27,8 @@ const Projects = () => {
                 <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack apartment review site using React, Nodejs, Expressjs, and PostgreSQL</p>
               </div>
 
-              <div className='w-full flex justify-center'>
-                <button className='border-2 border-white text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+              <div className='z-10 w-full flex justify-center'>
+                <button className='button_sub border-2 border-white text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
                   <a href="https://github.com/MichaelAlex03/BobcatLiving">Source Code</a>
                 </button>
               </div>
@@ -51,8 +51,8 @@ const Projects = () => {
                 <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack workout tracker site using React, Nodejs, Expressjs, and PostgreSQL</p>
               </div>
 
-              <div className='w-full flex justify-center'>
-                <button className='border-2 border-white w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+              <div className='z-10 w-full flex justify-center'>
+                <button className='button_sub w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
                   <a href="https://github.com/MichaelAlex03/FitTrackr">Source Code</a>
                 </button>
               </div>
@@ -75,8 +75,8 @@ const Projects = () => {
                 <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Portfolio page built with React, Typescript, Tailwind CSS</p>
               </div>
 
-              <div className='w-full flex justify-center'>
-                <button className='border-2 border-white w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+              <div className='z-10 w-full flex justify-center'>
+                <button className='button_sub border-2 border-white w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
                   <a href="https://github.com/MichaelAlex03/PersonalSite">Source Code</a>
                 </button>
               </div>

@@ -10,7 +10,20 @@
 
 }
 
-@layer utilities{
+@layer components{
+
+  .button_main{
+    @apply relative -top-1 -left-1 bg-white py-2.5 px-5 font-medium uppercase text-black transition-all before:absolute before:top-1 before:left-1 before:-z-[1] 
+        before:h-full before:w-full before:border-4 before:border-[#00ADB5] before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0;
+  }
+
+  .button_sub{
+    @apply relative border-2 border-white bg-transparent py-2.5 px-5 font-medium text-white uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-white before:transition-transform before:duration-500 before:content-[''] hover:text-black before:hover:scale-y-100
+  }
+
+}
+
+@layer utilities{ 
   .nav{
     @apply relative tracking-[1px]
   }
@@ -24,4 +37,6 @@
   .nav:hover::after{
     @apply w-[100%]
   }
+
+
 }

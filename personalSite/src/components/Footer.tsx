@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     <footer className='absolute bottom-0 bg-[#222831] flex flex-col items-center justify-center p-8 drop-shadow-md w-full gap-2'>
+
       <div className='flex gap-2'>
         <a href="https://www.linkedin.com/in/michaelllev/">
           <FontAwesomeIcon icon={faLinkedin} 
@@ -23,9 +24,11 @@ const Footer = () => {
             color='white'/>
         </a>
       </div>
+
       <div>
         <p className='text-white'> Michael Lleverino © 2024</p>
       </div>
+      
     </footer>
   )
 }
