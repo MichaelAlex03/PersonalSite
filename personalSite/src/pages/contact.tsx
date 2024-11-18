@@ -73,7 +73,8 @@ const Contact = () => {
             name='user_name'
             placeholder='Name*'
             value={formData.user_name}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            required/>
         </div>
 
         <div className='flex flex-col w-full'>
@@ -83,21 +84,23 @@ const Contact = () => {
             name='user_email'
             placeholder='Email*'
             value={formData.user_email}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            required/>
         </div>
 
         <div className='flex flex-col w-full'>
           <label htmlFor='message' className='text-sm md:text-base lg:text-lg mb-1'>Message</label>
           <textarea className='rounded-sm text-black p-2 w-full h-full' 
           name='message' 
-          placeholder='Message'
+          placeholder='Message*'
           value={formData.message}
-          onChange={handleChange}>
+          onChange={handleChange}
+          required>
           </textarea>
         </div>
         <p className='w-full flex flex-start text-sm md:text-base lg:text-lg mb-1'>* Required</p>
 
-        <div className='z-10 w-full mt-3 flex justify-center '>
+        <div className='z-10 w-full mt-3 flex justify-center'>
           <button type='submit' className='button_sub w-full md:w-1/2 xl:w-1/2 py-1 rounded-sm'>
             Send
           </button>
