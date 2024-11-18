@@ -7,8 +7,8 @@ const AboutMe = () => {
       <div className='bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col xl:h-screen items-center gap-'>
 
         <div className='flex flex-col items-center mt-5'>
-              <h1 className='text-4xl xl:text-6xl font-bold'>About <span className='text-[#00ADB5]'>Me</span></h1>
-              <div className='border-[3px] xl:border-[4px] border-sky-300 w-1/3 mt-1'></div>
+              <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#00ADB5]'>Me</span></h1>
+              <div className='border-[3px] lg:border-[4px] border-sky-300 w-1/3 mt-1'></div>
         </div>
 
         {/*Container with both skills and about me description w/ profile picture*/}
@@ -35,18 +35,18 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/javascript.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>Javascript</h1>
+                <img src='../../images/skills/javascript.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>Javascript</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/html-5.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>HTML</h1>
+                <img src='../../images/skills/html-5.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>HTML</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/tailwindcss-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>Tailwind</h1>
+                <img src='../../images/skills/tailwindcss-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>Tailwind</h1>
               </div>
 
             </div>
@@ -55,23 +55,23 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/react.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>React</h1>
+                <img src='../../images/skills/react.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>React</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/postgresql.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>PostgreSQL</h1>
+                <img src='../../images/skills/postgresql.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>PostgreSQL</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/nodejs-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>NodeJS</h1>
+                <img src='../../images/skills/nodejs-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>NodeJS</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/docker-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>Docker</h1>
+                <img src='../../images/skills/docker-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>Docker</h1>
               </div>
             </div>
 
@@ -79,18 +79,18 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center space-y-2 lg:space-y-4 w-full'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/mongodb-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>MongoDB</h1>
+                <img src='../../images/skills/mongodb-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>MongoDB</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/git-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>Git</h1>
+                <img src='../../images/skills/git-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg'>Git</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/typescript-icon.svg' className='h-[30px] md:h-[40px] lg:h-[50px]'/>
-                <h1 className='text-sm md:text-lg lg:text-xl'>Typescript</h1>
+                <img src='../../images/skills/typescript-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <h1 className='text-sm md:text-lg '>Typescript</h1>
               </div>
 
             </div>

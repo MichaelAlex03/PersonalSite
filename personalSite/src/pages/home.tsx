@@ -40,7 +40,7 @@ const Home = () => {
                 <Projects />
             </div>
 
-            <div className='relative' id='Contact'>
+            <div className='relative'id='Contact'>
                 <Contact />
                 <Footer />
             </div>
