@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Projects = () => {
   return (
@@ -28,7 +28,7 @@ const Projects = () => {
               </div>
 
               <div className='z-10 w-full flex justify-center'>
-                <button className='button_sub border-2 border-white text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+                <button className='button_sub border-2 border-white text-sm md:text-base lg:text-lg md:p-1 w-2/3 md:w-1/3'>
                   <a href="https://github.com/MichaelAlex03/BobcatLiving">Source Code</a>
                 </button>
               </div>
@@ -52,7 +52,7 @@ const Projects = () => {
               </div>
 
               <div className='z-10 w-full flex justify-center'>
-                <button className='button_sub w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+                <button className='button_sub text-sm md:text-base lg:text-lg md:p-1 w-2/3 md:w-1/3'>
                   <a href="https://github.com/MichaelAlex03/FitTrackr">Source Code</a>
                 </button>
               </div>
@@ -76,7 +76,7 @@ const Projects = () => {
               </div>
 
               <div className='z-10 w-full flex justify-center'>
-                <button className='button_sub border-2 border-white w-1/2 text-sm md:text-base lg:text-lg md:p-1 w-1/3'>
+                <button className='button_sub border-2 border-white text-sm md:text-base lg:text-lg md:p-1 w-2/3 md:w-1/3'>
                   <a href="https://github.com/MichaelAlex03/PersonalSite">Source Code</a>
                 </button>
               </div>

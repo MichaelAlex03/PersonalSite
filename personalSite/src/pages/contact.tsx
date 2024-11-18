@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar'
+
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Footer from '../components/Footer';
+
 
 interface FormData{
   user_name: string,
@@ -39,7 +39,11 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          setFormData({
+            user_name:"",
+            user_email:"",
+            message:""
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);

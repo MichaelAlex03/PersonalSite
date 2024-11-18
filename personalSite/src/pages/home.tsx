@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AboutMe from './aboutMe';
 import Projects from './projects';
 import Contact from './contact';
