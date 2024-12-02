@@ -20,7 +20,7 @@ const AboutMe = () => {
               <p className='text-center text-sm md:text-xl md:w-2/3 lg:w-3/4 xl:w-2/3'>I am an aspiring full-stack software developer with a recent bachelor’s degree in computer science from Texas State University. Passionate about building and optimizing web applications, I have a strong foundation in both front-end and back-end technologies, including React, TypeScript, Node.js, and PostgreSQL. I’m actively seeking a full-time role where I can grow my skills and make an impact. In my free time, I enjoy gaming, working out, climbing, and spending time with friends.</p>
 
               <button className='button_sub flex items-center gap-2 text-sm md:text-xl'>
-                <a href="../../files/Resume.pdf" download="Resume">Download Resume</a>
+                <a href="../../files/newResume.pdf" download="Resume">Download Resume</a>
               </button>
             </div>
 
