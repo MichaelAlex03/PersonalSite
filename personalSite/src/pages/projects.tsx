@@ -17,14 +17,14 @@ const Projects = () => {
           <div className='flex flex-col items-center gap-4'>
 
             <div className='flex object-cover w-4/5 xl:w-3/5'>
-              <img src='../images/projectImages/NASA.png' alt='Apartment project reviews page' className='shadow-2xl w-full rounded-3xl border-2 border-black'/>
+              <img src='../images/projectImages/NASA.png' alt='Apartment project reviews page' className='shadow-2xl w-full rounded-3xl border-4 border-black'/>
             </div>
 
             <div className='flex flex-col items-center w-3/4 md:w-3/5 lg:w-1/2 space-y-4'>
 
               <div className='text-center mb-1'>
                 <h2 className='font-bold md:font-extrabold text-xl md:text-3xl lg:text-4xl'>Nasa Control Center Web App</h2>
-                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack NASA control center using React, Nodejs, Expressjs, and MongoDB</p>
+                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack NASA control center using React, Node.js/Express.js, and MongoDB</p>
               </div>
 
               <div className='z-10 w-full flex justify-center'>
@@ -41,14 +41,14 @@ const Projects = () => {
           <div className='flex flex-col items-center gap-4'>
 
             <div className='flex w-4/5 xl:w-3/5'>
-              <img src='../images/projectImages/workout.png' alt='Apartment project reviews page' className=' shadow-xl w-full rounded-3xl border-2 border-black'/>
+              <img src='../images/projectImages/workout.png' alt='FitTrack workout page' className=' shadow-2xl w-full rounded-3xl border-4 border-black'/>
             </div>
 
             <div className='flex flex-col items-center w-3/4 md:w-3/5 lg:w-1/2 space-y-4'>
 
               <div className='text-center mb-1'>
                 <h2 className='font-bold md:font-extrabold text-xl md:text-3xl lg:text-4xl'>FitTrackr Web App</h2>
-                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack workout tracker site using React, Nodejs, Expressjs, and PostgreSQL</p>
+                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Full stack workout tracker site using React, Node.js/Express.js, and PostgreSQL</p>
               </div>
 
               <div className='z-10 w-full flex justify-center'>
@@ -61,18 +61,18 @@ const Projects = () => {
 
           </div>
 
-          {/*Portfolio*/}
+          {/*Tank Game*/}
           <div className='flex flex-col items-center gap-4'>
 
             <div className='flex w-4/5 xl:w-3/5'>
-              <img src='../images/projectImages/Portfolio.png' alt='Apartment project reviews page' className=' shadow-xl w-full rounded-3xl border-2 border-black'/>
+              <img src='../images/projectImages/TankGame.png' alt='Tank game top down view' className=' shadow-xl w-full rounded-3xl border-4 border-black'/>
             </div>
 
             <div className='flex flex-col items-center w-3/4 md:w-3/5 lg:w-1/2 space-y-4'>
 
               <div className='text-center mb-1'>
-                <h2 className='font-bold md:font-extrabold text-xl md:text-3xl lg:text-4xl'>Portfolio Web App</h2>
-                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Portfolio page built with React, Typescript, Tailwind CSS</p>
+                <h2 className='font-bold md:font-extrabold text-xl md:text-3xl lg:text-4xl'>Top Down Tank Game</h2>
+                <p className='flex flex-col text-sm md:text-lg lg:text-xl'>Top down tank game built with React, Javascript, Node.js/Express.js, and MongoDB</p>
               </div>
 
               <div className='z-10 w-full flex justify-center'>
