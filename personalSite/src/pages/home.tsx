@@ -11,12 +11,6 @@ const Home = () => {
         document.getElementById(div)?.scrollIntoView({behavior: 'smooth'});
     }
 
-    //relative border-2 before:border-white bg-transparent py-2.5 px-5 font-medium uppercase text-white transition-colors before:absolute before:left-0 
-    //before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-[#00ADB5] before:transition-transform before:duration-300 
-    //hover:text-white before:hover:scale-x-100 flex items-center hover:border-black
-
-    //border-2 border-white py-2 px-3 flex items-center gap-2 text-base md:text-xl
-
     return (
         <>
             <div className='fixed top-0 left-0 w-full z-[1000]'>
