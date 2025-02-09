@@ -11,7 +11,7 @@ interface CardProps {
 
 const ProjectCard = ({ name, image, description, link, technologies, gitHub }: CardProps) => {
     return (
-        <div className='flex flex-col rounded-md w-full bg-[#26313F]'>
+        <div className='flex flex-col rounded-md w-full bg-[#26313F] transition duration-300 ease-in-out transform hover:-translate-y-2'>
 
             <div className='w-full'>
                 <img src={image} className='rounded-md'/>
