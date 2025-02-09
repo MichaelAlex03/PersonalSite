@@ -2,7 +2,7 @@
 const AboutMe = () => {
   return (
     <>
-      <div className='bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col xl:h-screen items-center gap-'>
+      <div className='bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col xl:h-screen items-center'>
 
         <div className='flex flex-col items-center mt-5'>
               <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#00ADB5]'>Me</span></h1>
