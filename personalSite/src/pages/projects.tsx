@@ -24,7 +24,7 @@ const Projects = () => {
         <button className={showAll ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg`
           : `border border-white text-white py-2 px-4 hover:text-black hover:bg-[#55E5A4] rounded-lg`}
           onClick={() => {
-            setShowAll(!showAll)
+            setShowAll(true)
             setShowFrontend(false)
             setShowFullStack(false)
           }}>
@@ -34,7 +34,7 @@ const Projects = () => {
           : `border border-white text-white hover:text-black hover:bg-[#55E5A4] py-2 px-4 rounded-lg`}
           onClick={() => {
             setShowAll(false)
-            setShowFrontend(!showFrontend)
+            setShowFrontend(true)
             setShowFullStack(false)
           }}>
           Frontend Projects
@@ -44,7 +44,7 @@ const Projects = () => {
           onClick={() => {
             setShowAll(false)
             setShowFrontend(false)
-            setShowFullStack(!showFullStack)
+            setShowFullStack(true)
           }}>
           Full Stack Projects
         </button>
@@ -52,37 +52,39 @@ const Projects = () => {
       </div>
 
       {/*Projects*/}
-      <div className='flex flex-row items-center justify-center space-x-8'>
+      <div className="flex justify-center">
 
         {/*NASA Project*/}
 
-        <ProjectCard
-          name="Nasa Control Center"
-          image="../images/projectImages/NASA.png"
-          description="A simulated mission control dashboard for launching and managing space missions with real-time data visualization"
-          gitHub="https://github.com/MichaelAlex03/NasaAPI"
-          technologies={['react', 'nodejs', 'mongodb', 'docker', 'aws']}
-        />
-        
-        {/*FitTrackr*/}
+        {(showAll || showFullStack) && <div className='grid grid-cols-2 w-3/4 gap-8'>
+          <ProjectCard
+            name="Nasa Control Center"
+            image="../images/projectImages/NASA.png"
+            description="A simulated mission control dashboard for launching and managing space missions with real-time data visualization"
+            gitHub="https://github.com/MichaelAlex03/NasaAPI"
+            technologies={['react', 'nodejs', 'mongodb', 'docker', 'aws']}
+          />
 
-        <ProjectCard
-          name="FitTrackr"
-          image="../images/projectImages/workout.png"
-          description="Full stack workout tracker site using React, Node.js/Express.js, and PostgreSQL"
-          gitHub="https://github.com/MichaelAlex03/FitTrackr"
-          technologies={['react', 'tailwindcss', 'nodejs', 'postgresql']}
-        />
+          {/*FitTrackr*/}
 
-        {/*Tank Game*/}
+          <ProjectCard
+            name="FitTrackr"
+            image="../images/projectImages/workout.png"
+            description="Full stack workout tracker site using React, Node.js/Express.js, and PostgreSQL"
+            gitHub="https://github.com/MichaelAlex03/FitTrackr"
+            technologies={['react', 'tailwindcss', 'nodejs', 'postgresql']}
+          />
 
-        <ProjectCard
-          name="Top Down Tank Game"
-          image="../images/projectImages/TankGame.png"
-          description="Top down tank game built with React, Javascript, Node.js/Express.js, and MongoDB"
-          gitHub="https://github.com/MichaelAlex03/CS_4398"
-          technologies={['javascript', 'tailwindcss', 'nodejs', 'mongodb']}
-        />
+          {/*Tank Game*/}
+
+          <ProjectCard
+            name="Top Down Tank Game"
+            image="../images/projectImages/TankGame.png"
+            description="Top down tank game built with React, Javascript, Node.js/Express.js, and MongoDB"
+            gitHub="https://github.com/MichaelAlex03/CS_4398"
+            technologies={['javascript', 'tailwindcss', 'nodejs', 'mongodb']}
+          />
+        </div>}
 
       </div>
 
