@@ -28,7 +28,8 @@ const Projects = () => {
             setShowFrontend(false)
             setShowFullStack(false)
           }}>
-          All Projects
+          <span className="block md:hidden">All</span>
+          <span className="hidden md:block">All Projects</span>
         </button>
         <button className={showFrontend ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg`
           : `border border-white text-white hover:text-black hover:bg-[#55E5A4] py-2 px-4 rounded-lg`}
@@ -37,7 +38,8 @@ const Projects = () => {
             setShowFrontend(true)
             setShowFullStack(false)
           }}>
-          Frontend Projects
+          <span className="block md:hidden">Frontend</span>
+          <span className="hidden md:block">Frontend Projects</span>
         </button>
         <button className={showFullStack ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg`
           : `border border-white text-white hover:text-black hover:bg-[#55E5A4] py-2 px-4 rounded-lg`}
@@ -46,7 +48,8 @@ const Projects = () => {
             setShowFrontend(false)
             setShowFullStack(true)
           }}>
-          Full Stack Projects
+          <span className="block md:hidden">Full Stack</span>
+          <span className="hidden md:block">Full Stack Projects</span>
         </button>
 
       </div>
@@ -56,7 +59,7 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className='grid grid-cols-2 w-3/4 gap-8'>
+        {(showAll || showFullStack) && <div className='grid grid-cols-1 lg:grid-cols-2 w-3/4 gap-8'>
           <ProjectCard
             name="Nasa Control Center"
             image="../images/projectImages/NASA.png"
