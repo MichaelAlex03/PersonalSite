@@ -24,7 +24,7 @@ const Home = () => {
                     <div className='z-10 mt-3'>
                         <button className='button_main flex items-center gap-2 text-base md:text-xl'
                             onClick={() => handleClick('aboutMe')}>
-                            Check out My Work
+                            Check out My Work 
                             <i className='bx bx-down-arrow-alt ml-2'></i>
                         </button>
                     </div>
