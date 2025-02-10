@@ -43,7 +43,7 @@ const AboutMe = () => {
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/tailwindcss-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='../../images/skills/tailwindcss.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Tailwind</h1>
               </div>
 
@@ -63,12 +63,12 @@ const AboutMe = () => {
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/nodejs-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='../../images/skills/nodejs.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>NodeJS</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/docker-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='../../images/skills/docker.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Docker</h1>
               </div>
             </div>
@@ -77,7 +77,7 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center space-y-2 lg:space-y-4 w-full'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1'>
-                <img src='../../images/skills/mongodb-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='../../images/skills/mongodb.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>MongoDB</h1>
               </div>
 
