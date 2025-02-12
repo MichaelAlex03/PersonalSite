@@ -19,7 +19,7 @@ const Projects = () => {
 
 
       {/*Project buttons*/}
-      <div className="flex flex-row w-full justify-center gap-8">
+      <div className="flex flex-row w-full justify-center gap-4 md:gap-6 lg:gap-8">
 
         <button className={showAll ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`
           : `border border-white text-white py-2 px-4 hover:text-black hover:bg-[#55E5A4] rounded-lg xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`}
@@ -59,7 +59,7 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className='grid grid-cols-1 lg:grid-cols-2 w-3/4 gap-8'>
+        {(showAll || showFullStack) && <div className='grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[65%] gap-8'>
           <ProjectCard
             name="Nasa Control Center"
             image="../images/projectImages/NASA.png"
