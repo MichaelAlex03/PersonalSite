@@ -87,6 +87,8 @@ const Projects = () => {
             gitHub="https://github.com/MichaelAlex03/CS_4398"
             technologies={['javascript', 'tailwindcss', 'nodejs', 'mongodb']}
           />
+
+          
         </div>}
 
       </div>

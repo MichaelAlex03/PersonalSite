@@ -27,7 +27,7 @@ const AboutMe = () => {
           </div>
 
           {/*Skills*/}
-          <div className='flex flex-row justify-evenly items-center w-full md:w-3/5 lg:w-2/3 xl:w-3/4 py-6 pr-2'>
+          <div className='flex flex-row justify-evenly items-center w-full md:w-3/5 lg:w-2/3 xl:w-3/4 py-6'>
 
             {/*Column 1*/}
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
@@ -87,7 +87,7 @@ const AboutMe = () => {
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1'>
-                <img src='../../images/skills/typescript-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='../../images/skills/typescript.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Typescript</h1>
               </div>
 
