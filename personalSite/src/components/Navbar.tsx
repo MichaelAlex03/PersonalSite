@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { CSSTransition } from 'react-transition-group';
 
 interface NavProps {
     setShowMenu?: React.Dispatch<React.SetStateAction<boolean>>;
@@ -10,10 +9,13 @@ interface NavProps {
 
 const NavLinks = ({ showMenu, setShowMenu }: NavProps) => {
 
+    const [currentPage, setCurrentPage] = useState('Home');
+
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
         if (setShowMenu) {
             setShowMenu(!showMenu)
+            setCurrentPage(div)
         }
     };
 
@@ -38,8 +40,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className="flex justify-center items-center w-full text-white py-6 px-10 bg-[#222831] drop-shadow-md flex-wrap">
-
+            <header className="flex justify-center items-center w-full text-white py-6 px-10 bg-[#222831] drop-shadow-md ">
 
                 <div className="flex mr-auto">
                     <h1 className='text-base lg:text-2xl font-bold'>Michael A Lleverino</h1>
@@ -52,15 +53,15 @@ const Navbar = () => {
 
                 <button onClick={toggleBurgerMenu} className='md:hidden'>
                     <FontAwesomeIcon icon={faBars} />
+
+                    <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
+                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
+                    >
+                        <NavLinks showMenu={showMenu} setShowMenu={setShowMenu} />
+                    </div>
                 </button>
 
-                {showMenu && (
-                
-                        <div className='flex flex-col basis-full gap-6 mt-4'>
-                            <NavLinks showMenu={showMenu} setShowMenu={setShowMenu} />
-                        </div>
-                    
-                )}
+
             </header>
 
         </>
