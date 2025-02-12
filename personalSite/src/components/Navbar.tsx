@@ -12,6 +12,7 @@ const NavLinks = ({ showMenu, setShowMenu }: NavProps) => {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const handleClick = (div: string) => {
+        console.log(div)
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
         if (setShowMenu) {
             setShowMenu(!showMenu)
@@ -21,10 +22,10 @@ const NavLinks = ({ showMenu, setShowMenu }: NavProps) => {
 
     return (
         <>
-            <button onClick={() => handleClick('home')}><span className="nav">Home</span></button>
-            <button onClick={() => handleClick('aboutMe')}><span className="nav">About</span></button>
-            <button onClick={() => handleClick('Projects')}><span className="nav">Projects</span></button>
-            <button onClick={() => handleClick('Contact')}><span className="nav">Contact</span></button>
+            <button onClick={() => handleClick('home')}><span className={currentPage === 'home' ? 'text-[#55E5A4]' : 'text-white'}>Home</span></button>
+            <button onClick={() => handleClick('aboutMe')}><span className={currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-white'}>About</span></button>
+            <button onClick={() => handleClick('Projects')}><span className={currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-white'}>Projects</span></button>
+            <button onClick={() => handleClick('Contact')}><span className={currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-white'}>Contact</span></button>
         </>
     )
 }
