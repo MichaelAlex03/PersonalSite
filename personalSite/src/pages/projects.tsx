@@ -74,7 +74,7 @@ const Projects = () => {
             name="FitTrackr"
             image="../images/projectImages/workout.png"
             description="Full stack workout tracker site using React, Node.js/Express.js, and PostgreSQL"
-            gitHub="https://github.com/MichaelAlex03/FitTrackr"
+            gitHub="https://github.com/MichaelAlex03/FitnessTracker"
             technologies={['react', 'tailwindcss', 'nodejs', 'postgresql']}
           />
 
