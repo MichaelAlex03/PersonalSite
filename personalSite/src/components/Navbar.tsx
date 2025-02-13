@@ -2,22 +2,14 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-interface NavProps {
-    setShowMenu?: React.Dispatch<React.SetStateAction<boolean>>;
-    showMenu?: boolean;
-}
-
-const NavLinks = ({ showMenu, setShowMenu }: NavProps) => {
+const NavLinks = () => {
 
     const [currentPage, setCurrentPage] = useState('Home');
 
     const handleClick = (div: string) => {
-        console.log(div)
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
-        if (setShowMenu) {
-            setShowMenu(!showMenu)
-            setCurrentPage(div)
-        }
+        setCurrentPage(div)
+
     };
 
     return (
@@ -58,7 +50,7 @@ const Navbar = () => {
                     <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
                     ${showMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
                     >
-                        <NavLinks showMenu={showMenu} setShowMenu={setShowMenu} />
+                        <NavLinks />
                     </div>
                 </button>
 
