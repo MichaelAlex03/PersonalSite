@@ -63,7 +63,7 @@ const Projects = () => {
           <ProjectCard
             name="Nasa Control Center"
             image="../images/projectImages/NASA.png"
-            description="A simulated mission control dashboard for launching and managing space missions with real-time data visualization"
+            description="A full-stack mission control dashboard using React, Node.js, Express, and MongoDB. It delivers real-time space analytics with a sleek, scalable interface, containerized with Docker and deployed using AWS"
             gitHub="https://github.com/MichaelAlex03/NasaAPI"
             technologies={['react', 'nodejs',  'Express', 'mongodb', 'docker', 'aws']}
           />
@@ -83,7 +83,7 @@ const Projects = () => {
           <ProjectCard
             name="Top Down Tank Game"
             image="../images/projectImages/TankGame.png"
-            description="Top Down Tank Game is an engaging real-time strategy shooter built with React, JavaScript, Node.js, Express, and MongoDB. Command tanks in dynamic battles with responsive controls and immersive graphics."
+            description="Top Down Tank Game is an engaging real-time shooter built with React, JavaScript, Node.js, Express, and MongoDB. Command tanks in dynamic battles with responsive controls and immersive graphics."
             gitHub="https://github.com/MichaelAlex03/CS_4398"
             technologies={['javascript', 'tailwindcss', 'nodejs',  'Express', 'mongodb']}
           />
