@@ -73,7 +73,7 @@ const Projects = () => {
           <ProjectCard
             name="FitTrackr"
             image="../images/projectImages/workout.png"
-            description="Full stack workout tracker site using React, Node.js, Express.js, and PostgreSQL"
+            description="A full-stack workout tracker using React, Node.js, Express, and PostgreSQL. It delivers personalized fitness insights with a sleek, scalable interface enhanced by TailwindCSS and AWS-driven architecture."
             gitHub="https://github.com/MichaelAlex03/FitnessTracker"
             technologies={['react', 'tailwindcss', 'nodejs', 'postgresql', 'Express', 'aws']}
           />
@@ -83,7 +83,7 @@ const Projects = () => {
           <ProjectCard
             name="Top Down Tank Game"
             image="../images/projectImages/TankGame.png"
-            description="Top down tank game built with React, Javascript, Node.js, Express.js, and MongoDB"
+            description="Top Down Tank Game is an engaging real-time strategy shooter built with React, JavaScript, Node.js, Express, and MongoDB. Command tanks in dynamic battles with responsive controls and immersive graphics."
             gitHub="https://github.com/MichaelAlex03/CS_4398"
             technologies={['javascript', 'tailwindcss', 'nodejs',  'Express', 'mongodb']}
           />
