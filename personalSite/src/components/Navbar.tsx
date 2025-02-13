@@ -16,10 +16,10 @@ const MobileViewLinks = () => {
 
     return (
         <>
-            <button onClick={() => handleClick('home')}><span className={currentPage === 'home' ? 'text-[#55E5A4]' : 'text-white'}>Home</span></button>
-            <button onClick={() => handleClick('aboutMe')}><span className={currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-white'}>About</span></button>
-            <button onClick={() => handleClick('Projects')}><span className={currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-white'}>Projects</span></button>
-            <button onClick={() => handleClick('Contact')}><span className={currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-white'}>Contact</span></button>
+            <button onClick={() => handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Home</span></button>
+            <button onClick={() => handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>About</span></button>
+            <button onClick={() => handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Projects</span></button>
+            <button onClick={() => handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
         </>
     )
 }
