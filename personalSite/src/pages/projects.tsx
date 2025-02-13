@@ -59,13 +59,13 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className='grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[65%] gap-8'>
+        {(showAll || showFullStack) && <div className='grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[70%] 2xl:w-[65%] gap-8'>
           <ProjectCard
             name="Nasa Control Center"
             image="../images/projectImages/NASA.png"
-            description="A simulated mission control dashboard for launching and managing space missions with real-time data visualization"
+            description="A full-stack mission control dashboard using React, Node.js, Express, and MongoDB. It delivers real-time space analytics with a sleek, scalable interface, containerized with Docker and deployed using AWS"
             gitHub="https://github.com/MichaelAlex03/NasaAPI"
-            technologies={['react', 'nodejs', 'mongodb', 'docker', 'aws']}
+            technologies={['react', 'nodejs',  'Express', 'mongodb', 'docker', 'aws']}
           />
 
           {/*FitTrackr*/}
@@ -73,9 +73,9 @@ const Projects = () => {
           <ProjectCard
             name="FitTrackr"
             image="../images/projectImages/workout.png"
-            description="Full stack workout tracker site using React, Node.js/Express.js, and PostgreSQL"
+            description="A full-stack workout tracker using React, Node.js, Express, and PostgreSQL. It delivers personalized fitness insights with a sleek, scalable interface enhanced by TailwindCSS and AWS-driven architecture."
             gitHub="https://github.com/MichaelAlex03/FitnessTracker"
-            technologies={['react', 'tailwindcss', 'nodejs', 'postgresql']}
+            technologies={['react', 'tailwindcss', 'nodejs', 'postgresql', 'Express', 'aws']}
           />
 
           {/*Tank Game*/}
@@ -83,9 +83,9 @@ const Projects = () => {
           <ProjectCard
             name="Top Down Tank Game"
             image="../images/projectImages/TankGame.png"
-            description="Top down tank game built with React, Javascript, Node.js/Express.js, and MongoDB"
+            description="Top Down Tank Game is an engaging real-time shooter built with React, JavaScript, Node.js, Express, and MongoDB. Command tanks in dynamic battles with responsive controls and immersive graphics."
             gitHub="https://github.com/MichaelAlex03/CS_4398"
-            technologies={['javascript', 'tailwindcss', 'nodejs', 'mongodb']}
+            technologies={['javascript', 'tailwindcss', 'nodejs',  'Express', 'mongodb']}
           />
 
           
