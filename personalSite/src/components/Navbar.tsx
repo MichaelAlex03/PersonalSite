@@ -3,20 +3,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 interface NavProps {
-    currentPage: string
+    currentPage: string;
     setCurrentPage: (page: string) => void;
+    showMenu?: boolean;
+    setShowMenu?: (value: boolean) => void;
 }
 
 
 //Burger Menu for mobile view
-const MobileViewLinks = ({ currentPage, setCurrentPage }: NavProps) => {
+const MobileViewLinks = ({ currentPage, setCurrentPage, showMenu, setShowMenu }: NavProps) => {
 
-
+    showMenu === undefined ? console.log('error') : console.log(showMenu);
 
     const handleClick = (div: string) => {
-        document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
-        setCurrentPage(div)
-
+        if (showMenu){
+            document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
+            setCurrentPage(div)
+            console.log(currentPage)
+        } else {
+            console.log('errrrrrr')
+        }
     };
 
     return (
@@ -24,7 +30,7 @@ const MobileViewLinks = ({ currentPage, setCurrentPage }: NavProps) => {
             <button onClick={() => handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Home</span></button>
             <button onClick={() => handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>About</span></button>
             <button onClick={() => handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Projects</span></button>
-            <button onClick={() => handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
+            <button onClick={() => handleClick('Contact')} disabled={!showMenu}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
         </>
     )
 }
@@ -66,18 +72,18 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
                 </div>
 
                 <div className='hidden md:flex gap-6'>
-                    <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+                    <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} />
                 </div>
 
 
                 <button onClick={toggleBurgerMenu} className='md:hidden'>
                     <FontAwesomeIcon icon={faBars} />
 
-                    
+
                     <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
-                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40"}`}
+                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-50 -translate-y-40"}`}
                     >
-                        <MobileViewLinks currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+                        <MobileViewLinks currentPage={currentPage} setCurrentPage={setCurrentPage} showMenu={showMenu} setShowMenu={setShowMenu}/>
                     </div>
                 </button>
 
