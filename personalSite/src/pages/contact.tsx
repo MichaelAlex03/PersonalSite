@@ -106,7 +106,7 @@ const Contact = () => {
         </div>
 
         <div className='z-10 w-full mt-3 flex justify-center'>
-          <button type='submit' className='button_sub w-full md:w-1/2 xl:w-1/2 py-1 rounded-sm'>
+          <button type='submit'  className='border border-white text-white py-2 px-4 font-semibold xl:text-lg 2xl:text-xl hover:bg-[#55E5A4] hover:text-black transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 xl:w-1/2'>
             Send
           </button>
         </div>

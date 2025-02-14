@@ -21,8 +21,8 @@ const Projects = () => {
       {/*Project buttons*/}
       <div className="flex flex-row w-full justify-center gap-4 md:gap-6 lg:gap-8">
 
-        <button className={showAll ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`
-          : `border border-white text-white py-2 px-4 hover:text-black hover:bg-[#55E5A4] rounded-lg xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`}
+        <button className={showAll ? `border border-white font-semibold text-black bg-[#55E5A4] py-2 px-4  xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`
+          : `border border-white text-white py-2 px-4 font-semibold hover:text-black hover:bg-[#55E5A4]  xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`}
           onClick={() => {
             setShowAll(true)
             setShowFrontend(false)
@@ -31,8 +31,8 @@ const Projects = () => {
           <span className="block md:hidden">All</span>
           <span className="hidden md:block">All Projects</span>
         </button>
-        <button className={showFrontend ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg xl:text-lg transition duration-300 ease-in-out transform hover:-translate-y-2`
-          : `border border-white text-white hover:text-black hover:bg-[#55E5A4] py-2 px-4 rounded-lg xl:text-lg transition duration-300 ease-in-out transform hover:-translate-y-2`}
+        <button className={showFrontend ? `border border-white font-semibold text-black bg-[#55E5A4] py-2 px-4  xl:text-lg transition duration-300 ease-in-out transform hover:-translate-y-2`
+          : `border border-white text-white hover:text-black font-semibold hover:bg-[#55E5A4] py-2 px-4  xl:text-lg transition duration-300 ease-in-out transform hover:-translate-y-2`}
           onClick={() => {
             setShowAll(false)
             setShowFrontend(true)
@@ -41,8 +41,8 @@ const Projects = () => {
           <span className="block md:hidden">Frontend</span>
           <span className="hidden md:block">Frontend Projects</span>
         </button>
-        <button className={showFullStack ? `border border-white text-black bg-[#55E5A4] py-2 px-4 rounded-lg text-base xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`
-          : `border border-white text-white hover:text-black hover:bg-[#55E5A4] py-2 px-4 rounded-lg text-base xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`}
+        <button className={showFullStack ? `border font-semibold border-white text-black bg-[#55E5A4] py-2 px-4  text-base xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`
+          : `border border-white text-white hover:text-black font-semibold hover:bg-[#55E5A4] py-2 px-4  text-base xl:text-lg  transition duration-300 ease-in-out transform hover:-translate-y-2`}
           onClick={() => {
             setShowAll(false)
             setShowFrontend(false)
