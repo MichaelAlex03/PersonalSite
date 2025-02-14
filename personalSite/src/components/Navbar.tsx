@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 //Burger Menu for mobile view
 const MobileViewLinks = () => {
 
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('home');
 
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
@@ -27,7 +27,7 @@ const MobileViewLinks = () => {
 //Navlink for non burger menu
 const NavLinks = () => {
 
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('home');
 
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
