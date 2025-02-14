@@ -30,7 +30,7 @@ const MobileViewLinks = ({ currentPage, setCurrentPage, showMenu, setShowMenu }:
             <button onClick={() => handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Home</span></button>
             <button onClick={() => handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>About</span></button>
             <button onClick={() => handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Projects</span></button>
-            <button onClick={() => handleClick('Contact')} disabled={!showMenu}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
+            <button onClick={() => handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
         </>
     )
 }
@@ -81,7 +81,7 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
 
 
                     <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
-                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-50 -translate-y-40"}`}
+                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-50 -translate-y-40 -z-10"}`}
                     >
                         <MobileViewLinks currentPage={currentPage} setCurrentPage={setCurrentPage} showMenu={showMenu} setShowMenu={setShowMenu}/>
                     </div>
