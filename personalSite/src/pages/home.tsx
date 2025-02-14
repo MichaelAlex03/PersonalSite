@@ -1,4 +1,6 @@
 
+import { useState } from 'react'
+
 import AboutMe from './aboutMe';
 import Projects from './projects';
 import Contact from './contact';
@@ -7,14 +9,17 @@ import Footer from '../components/Footer';
 
 const Home = () => {
 
-    const handleClick = (div: string) => {
+    const [currentPage, setCurrentPage] = useState('home');
+
+    const handleGoToContent = (div: string) => {
         document.getElementById(div)?.scrollIntoView({behavior: 'smooth'});
+        setCurrentPage('aboutMe')
     }
 
     return (
         <>
             <div className='fixed top-0 left-0 w-full z-[1000]'>
-                <Navbar />
+                <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage}/>
             </div>
 
             <div className='bg-[#222831] h-screen flex justify-center' id='home'>
@@ -23,7 +28,7 @@ const Home = () => {
                     <h3 className='text-center text-base md:text-2xl lg:text-3xl '>Aspiring full-stack developer creating dynamic, user-focused web apps</h3>
                     <div className='z-10 mt-3'>
                         <button className='button_main flex items-center gap-2 text-base md:text-xl'
-                            onClick={() => handleClick('aboutMe')}>
+                            onClick={() => handleGoToContent('aboutMe')}>
                             Check out My Work 
                             <i className='bx bx-down-arrow-alt ml-2'></i>
                         </button>

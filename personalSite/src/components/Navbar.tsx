@@ -2,11 +2,16 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+interface NavProps {
+    currentPage: string
+    setCurrentPage: (page: string) => void;
+}
+
 
 //Burger Menu for mobile view
-const MobileViewLinks = () => {
+const MobileViewLinks = ({ currentPage, setCurrentPage }: NavProps) => {
 
-    const [currentPage, setCurrentPage] = useState('home');
+
 
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
@@ -25,9 +30,7 @@ const MobileViewLinks = () => {
 }
 
 //Navlink for non burger menu
-const NavLinks = () => {
-
-    const [currentPage, setCurrentPage] = useState('home');
+const NavLinks = ({ currentPage, setCurrentPage }: NavProps) => {
 
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
@@ -45,7 +48,7 @@ const NavLinks = () => {
     )
 }
 
-const Navbar = () => {
+const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
 
     const [showMenu, setShowMenu] = useState(false);
 
@@ -63,7 +66,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:flex gap-6'>
-                    <NavLinks />
+                    <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage}/>
                 </div>
 
 
@@ -73,7 +76,7 @@ const Navbar = () => {
                     <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
                     ${showMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
                     >
-                        <MobileViewLinks />
+                        <MobileViewLinks currentPage={currentPage} setCurrentPage={setCurrentPage}/>
                     </div>
                 </button>
 
