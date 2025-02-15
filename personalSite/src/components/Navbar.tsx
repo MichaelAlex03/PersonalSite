@@ -45,9 +45,6 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
     const [showMenu, setShowMenu] = useState(false);
 
     const handleClick = (div: string) => {
-        console.log(div)
-        const element = document.getElementById(div)
-        console.log(element)
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
         setCurrentPage(div)
     };
