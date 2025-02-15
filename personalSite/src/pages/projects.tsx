@@ -12,7 +12,7 @@ const Projects = () => {
     <div className='min-h-screen bg-[#222831] text-white flex flex-col py-20 px-4 items-center gap-8 w-full'>
 
       {/*Header*/}
-      <div className='flex flex-col items-center md:mt-5 mb-2'>
+      <div className='flex flex-col items-center md:mt-5 xl:mt-26 mb-2'>
         <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-1 md:mb-0'>Projects</h1>
         <div className='border-[3px] lg:border-[4px] border-sky-300 w-1/2 mt-1'></div>
       </div>
@@ -59,7 +59,7 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[70%] 2xl:w-[65%] gap-8'>
+        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[70%] 2xl:w-[65%] gap-10'>
           <ProjectCard
             name="Nasa Control Center"
             image="../images/projectImages/NASA.png"
