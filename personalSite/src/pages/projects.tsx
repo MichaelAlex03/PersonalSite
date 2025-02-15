@@ -91,7 +91,7 @@ const Projects = () => {
           
         </div>}
 
-        {showFrontend && <div className="flex justify-center items-center mt-10 mr-5 w-full font-bold text-2xl"> Coming Soon.... </div>}
+        {showFrontend && <div className="flex justify-center mt-10 mr-5 w-full font-bold text-2xl h-screen"> Coming Soon.... </div>}
 
       </div>
 
