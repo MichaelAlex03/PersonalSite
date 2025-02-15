@@ -11,7 +11,7 @@ interface NavProps {
 
 
 //Burger Menu for mobile view
-const MobileViewLinks = ({ currentPage, showMenu, handleClick }: NavProps) => {
+const MobileViewLinks = ({ currentPage, handleClick }: NavProps) => {
 
 
     return (

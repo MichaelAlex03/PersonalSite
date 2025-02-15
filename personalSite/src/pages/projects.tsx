@@ -9,10 +9,10 @@ const Projects = () => {
   const [showFullStack, setShowFullStack] = useState(false);
 
   return (
-    <div className='min-h-screen bg-[#222831] text-white flex flex-col py-20 px-4 items-center gap-8 w-full'>
+    <div className=' bg-[#222831] text-white flex flex-col items-center gap-8 w-full'>
 
       {/*Header*/}
-      <div className='flex flex-col items-center md:mt-5 xl:mt-26 mb-2'>
+      <div className='flex flex-col items-center md:mt-5 xl:mt-[8.5rem] mb-2'>
         <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-1 md:mb-0'>Projects</h1>
         <div className='border-[3px] lg:border-[4px] border-sky-300 w-1/2 mt-1'></div>
       </div>
