@@ -59,9 +59,9 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
         <>
             <header className="flex justify-center items-center w-full text-white py-6 px-10 bg-[#222831] drop-shadow-md ">
 
-                <div className="flex mr-auto">
+                <button className="flex mr-auto" onClick={() => handleClick('home')}>
                     <h1 className='text-base lg:text-2xl font-bold'>Michael A Lleverino</h1>
-                </div>
+                </button>
 
                 <div className='hidden md:flex gap-10'>
                     <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} handleClick={handleClick}/>

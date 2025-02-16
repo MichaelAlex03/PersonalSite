@@ -2,11 +2,11 @@
 const AboutMe = () => {
   return (
     <>
-      <div className='bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col items-center'>
+      <div className=' bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col items-center'>
 
         <div className='flex flex-col items-center mt-5 xl:mt-10'>
               <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#55E5A4]'>Me</span></h1>
-              <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/4 mt-1'></div>
+              <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 mt-1'></div>
         </div>
 
         {/*Container with both skills and about me description w/ profile picture*/}

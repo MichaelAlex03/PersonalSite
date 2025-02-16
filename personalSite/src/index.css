@@ -33,9 +33,9 @@
   .nav:hover::after{
     @apply w-[115%] bg-[#a8a7a7]
   }
-  
+
   .nav.active::after{
-    @apply w-[115%] bg-white
+    @apply w-[115%] bg-[#55E5A4]
   }
 
 
