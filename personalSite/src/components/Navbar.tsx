@@ -30,10 +30,10 @@ const NavLinks = ({ currentPage, handleClick }: NavProps) => {
 
     return (
         <>
-            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Home</span></button>
-            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>About</span></button>
-            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Projects</span></button>
-            <button onClick={() => handleClick && handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Contact</span></button>
+            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4] active' : 'text-[#c7c5c5] hover:text-[#287955]'} nav flex justify-center font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Home</span></button>
+            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4] active' : 'text-[#c7c5c5] hover:text-[#287955]'} nav  font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>About</span></button>
+            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4] active' : 'text-[#c7c5c5] hover:text-[#287955]'} nav  font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Projects</span></button>
+            <button onClick={() => handleClick && handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4] active' : 'text-[#c7c5c5] hover:text-[#287955]'} nav  font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Contact</span></button>
         </>
     )
 }
@@ -63,7 +63,7 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
                     <h1 className='text-base lg:text-2xl font-bold'>Michael A Lleverino</h1>
                 </div>
 
-                <div className='hidden md:flex gap-6'>
+                <div className='hidden md:flex gap-10'>
                     <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} handleClick={handleClick}/>
                 </div>
 
