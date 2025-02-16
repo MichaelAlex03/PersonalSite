@@ -65,6 +65,7 @@ const Projects = () => {
             image="../images/projectImages/NASA.png"
             description="A full-stack mission control dashboard using React, Node.js, Express, and MongoDB. It delivers real-time space analytics with a sleek, scalable interface, containerized with Docker and deployed using AWS"
             gitHub="https://github.com/MichaelAlex03/NasaAPI"
+            link="http://3.208.246.232:8000"
             technologies={['react', 'nodejs',  'Express', 'mongodb', 'docker', 'aws']}
           />
 
