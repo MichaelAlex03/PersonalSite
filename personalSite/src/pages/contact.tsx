@@ -62,7 +62,7 @@ const Contact = () => {
       <div className='flex flex-col gap-5 items-center w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3'>
         <div className='flex flex-col items-center'>
           <h1 className='text-4xl lg:text-6xl font-bold'>Contact Me</h1>
-          <div className='border-[3px] lg:border-[4px] border-sky-300 w-1/3 mt-1'></div>
+          <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 mt-1'></div>
         </div>
 
         <div className='flex items-center gap-2 justify-center w-full'>

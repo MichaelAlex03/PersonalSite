@@ -16,10 +16,10 @@ const MobileViewLinks = ({ currentPage, handleClick }: NavProps) => {
 
     return (
         <>
-            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Home</span></button>
-            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>About</span></button>
-            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Projects</span></button>
-            <button onClick={() => handleClick && handleClick('Contact')} ><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out`}>Contact</span></button>
+            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out text-base`}>Home</span></button>
+            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out text-base`}>About</span></button>
+            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out text-base`}>Projects</span></button>
+            <button onClick={() => handleClick && handleClick('Contact')} ><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5]'} font-bold transition-colors duration-300 ease-in-out text-base`}>Contact</span></button>
         </>
     )
 }
@@ -30,10 +30,10 @@ const NavLinks = ({ currentPage, handleClick }: NavProps) => {
 
     return (
         <>
-            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out`}>Home</span></button>
-            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out`}>About</span></button>
-            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out`}>Projects</span></button>
-            <button onClick={() => handleClick && handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out`}>Contact</span></button>
+            <button onClick={() => handleClick && handleClick('home')}><span className={`${currentPage === 'home' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Home</span></button>
+            <button onClick={() => handleClick && handleClick('aboutMe')}><span className={`${currentPage === 'aboutMe' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>About</span></button>
+            <button onClick={() => handleClick && handleClick('Projects')}><span className={`${currentPage === 'Projects' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Projects</span></button>
+            <button onClick={() => handleClick && handleClick('Contact')}><span className={`${currentPage === 'Contact' ? 'text-[#55E5A4]' : 'text-[#c7c5c5] hover:text-[#287955]'} font-bold transition-colors duration-500 ease-in-out text-base 2xl:text-lg`}>Contact</span></button>
         </>
     )
 }

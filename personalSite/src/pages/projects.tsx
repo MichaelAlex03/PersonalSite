@@ -14,7 +14,7 @@ const Projects = () => {
       {/*Header*/}
       <div className='flex flex-col items-center mt-24 md:mt-5 xl:mt-[8.5rem] mb-2'>
         <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-1 md:mb-0'>Projects</h1>
-        <div className='border-[3px] lg:border-[4px] border-sky-300 w-1/2 mt-1'></div>
+        <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 lg:w-3/4 mt-1 lg:mt-3'></div>
       </div>
 
 
