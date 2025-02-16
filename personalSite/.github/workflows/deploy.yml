@@ -19,6 +19,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
 
+      - name: Cd proj directory
+        uses: cd /personalSite
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
