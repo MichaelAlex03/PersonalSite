@@ -62,7 +62,7 @@ const Projects = () => {
         {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[70%] 2xl:w-[65%] gap-10'>
           <ProjectCard
             name="Nasa Control Center"
-            image="https://MichaelAlex03.github.io/PersonalSite/images/projectImages/NASA.png"
+            image="./PersonalSite/images/projectImages/NASA.png"
             description="A full-stack mission control dashboard using React, Node.js, Express, and MongoDB. It delivers real-time space analytics with a sleek, scalable interface, containerized with Docker and deployed using AWS"
             gitHub="https://github.com/MichaelAlex03/NasaAPI"
             link="http://3.208.246.232:8000"
@@ -73,7 +73,7 @@ const Projects = () => {
 
           <ProjectCard
             name="FitTrackr"
-            image="https://MichaelAlex03.github.io/PersonalSite/images/projectImages/workout.png"
+            image="./PersonalSite/images/projectImages/workout.png"
             description="A full-stack workout tracker using React, Node.js, Express, and PostgreSQL. It delivers personalized fitness insights with a sleek, scalable interface enhanced by TailwindCSS and AWS-driven architecture."
             gitHub="https://github.com/MichaelAlex03/FitnessTracker"
             technologies={['react', 'tailwindcss', 'nodejs', 'postgresql', 'Express', 'aws']}
@@ -83,7 +83,7 @@ const Projects = () => {
 
           <ProjectCard
             name="Top Down Tank Game"
-            image="https://MichaelAlex03.github.io/PersonalSite/images/projectImages/TankGame.png"
+            image="./PersonalSite/images/projectImages/TankGame.png"
             description="Top Down Tank Game is an engaging real-time shooter built with React, JavaScript, Node.js, Express, and MongoDB. Command tanks in dynamic battles with responsive controls and immersive graphics."
             gitHub="https://github.com/MichaelAlex03/CS_4398"
             technologies={['javascript', 'tailwindcss', 'nodejs',  'Express', 'mongodb']}
