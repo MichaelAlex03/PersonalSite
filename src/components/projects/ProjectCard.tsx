@@ -23,7 +23,7 @@ const ProjectCard = ({ name, image, description, link, technologies, gitHub}: Ca
                 <h4 className='mt-4 xl:text-lg'>Technologies Used</h4>
                 <div className='flex flex-row gap-4 mt-2'>
                     {technologies.map(item => (
-                        <img src={`/images/skills/${item}.svg`} className="h-[20px] w-[20px] xl:h-[25px] xl:w-[25px]"/>
+                        <img src={`/PersonalSite/images/skills/${item}.svg`} className="h-[20px] w-[20px] xl:h-[25px] xl:w-[25px]"/>
                     ))}
                 </div>
 
