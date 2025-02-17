@@ -1,6 +1,7 @@
 {
   "name": "personalsite",
   "private": true,
+  "homepage": "https://michaelalex03.github.io/PersonalSite/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,9 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -17,6 +20,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "boxicons": "^2.1.4",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-checkmark": "^2.1.1",
     "react-dom": "^18.3.1",
