@@ -77,7 +77,7 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
 
 
                     <div className={`lg:hidden flex absolute top-16 left-0 w-full h-auto bg-[#222831] flex-col items-center gap-6 font-semibold z-50 p-4 transition-all duration-300 ease-in-out transform 
-                    ${showMenu ? "opacity-100 translate-y-0" : "opacity-50 -translate-y-[300px] -z-10 "}`}
+                    ${showMenu ? "opacity-100 translate-y-0" : "-translate-y-[300px]"}`}
                     >
                         <MobileViewLinks currentPage={currentPage} setCurrentPage={setCurrentPage} showMenu={showMenu} handleClick={handleClick} />
                     </div>
