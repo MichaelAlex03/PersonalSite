@@ -16,11 +16,11 @@ const AboutMe = () => {
           <div className='flex flex-col items-center gap-4 mt-5 w-full'>
 
             <div className='z-0 flex flex-col items-center space-y-6'>
-              <img src='/PersonalSite/images/profile.jpg' className='rounded-full'/>
+              <img src='images/profile.jpg' className='rounded-full'/>
               <p className='text-center text-sm md:text-base lg:text-xl md:w-2/3 lg:w-2/3'>I am a full-stack software developer with a bachelor’s degree in computer science from Texas State University. Passionate about building and optimizing web applications, I have a strong foundation in both front-end and back-end technologies such as React, TypeScript, Node.js, and PostgreSQL.  In my free time, I enjoy gaming, working out, climbing, and spending time with friends.</p>
 
               <button className='border border-white text-white py-2 px-4 font-semibold xl:text-lg 2xl:text-xl hover:bg-[#55E5A4] hover:text-black transition duration-300 ease-in-out transform hover:scale-110'>
-                <a href="./files/newResume.pdf" download="Resume">Download Resume</a>
+                <a href="files/newResume.pdf" download="Resume">Download Resume</a>
               </button>
             </div>
 
@@ -33,17 +33,17 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/javascript.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/javascript.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Javascript</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/html-5.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/html-5.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>HTML</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/tailwindcss.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/tailwindcss.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Tailwind</h1>
               </div>
 
@@ -53,22 +53,22 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/react.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/react.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>React</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/postgresql.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/postgresql.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>PostgreSQL</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/nodejs.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/nodejs.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>NodeJS</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/docker.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/docker.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Docker</h1>
               </div>
             </div>
@@ -77,17 +77,17 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center space-y-2 lg:space-y-4 w-full'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/mongodb.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/mongodb.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>MongoDB</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/git-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/git-icon.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg'>Git</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='/PersonalSite/images/skills/typescript.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='images/skills/typescript.svg' className='h-[30px] md:h-[40px]'/>
                 <h1 className='text-sm md:text-lg '>Typescript</h1>
               </div>
 
