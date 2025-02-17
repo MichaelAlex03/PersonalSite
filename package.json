@@ -1,7 +1,7 @@
 {
   "name": "personalsite",
   "private": true,
-  "homepage": "https://michaelalex03.github.io/PersonalSite/",
+  "homepage": "https://michaelalex03/github.io/PersonalSite/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
