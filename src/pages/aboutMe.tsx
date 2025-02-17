@@ -1,13 +1,22 @@
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
   return (
     <>
-      <div className=' bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col items-center'>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className=' bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col items-center'>
 
-        <div className='flex flex-col items-center mt-5 xl:mt-10'>
-              <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#55E5A4]'>Me</span></h1>
-              <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 mt-1'></div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
+          className='flex flex-col items-center mt-5 xl:mt-10'>
+          <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#55E5A4]'>Me</span></h1>
+          <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 mt-1'></div>
+        </motion.div>
 
         {/*Container with both skills and about me description w/ profile picture*/}
         <div className='flex flex-col xl:flex-row items-center justify-center space-y-6 mt-10'>
@@ -16,7 +25,7 @@ const AboutMe = () => {
           <div className='flex flex-col items-center gap-4 mt-5 w-full'>
 
             <div className='z-0 flex flex-col items-center space-y-6'>
-              <img src='./PersonalSite/images/profile.jpg' className='rounded-full'/>
+              <img src='./PersonalSite/images/profile.jpg' className='rounded-full' />
               <p className='text-center text-sm md:text-base lg:text-xl md:w-2/3 lg:w-2/3'>I am a full-stack software developer with a bachelor’s degree in computer science from Texas State University. Passionate about building and optimizing web applications, I have a strong foundation in both front-end and back-end technologies such as React, TypeScript, Node.js, and PostgreSQL.  In my free time, I enjoy gaming, working out, climbing, and spending time with friends.</p>
 
               <button className='border border-white text-white py-2 px-4 font-semibold xl:text-lg 2xl:text-xl hover:bg-[#55E5A4] hover:text-black transition duration-300 ease-in-out transform hover:scale-110'>
@@ -33,42 +42,42 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/javascript.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/javascript.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>Javascript</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/html-5.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/html-5.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>HTML</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/tailwindcss.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/tailwindcss.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>Tailwind</h1>
               </div>
 
             </div>
 
-             {/*Column 2*/}
+            {/*Column 2*/}
             <div className='flex flex-col justify-center w-full space-y-2 lg:space-y-4'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/react.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/react.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>React</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/postgresql.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/postgresql.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>PostgreSQL</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/nodejs.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/nodejs.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>NodeJS</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/docker.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/docker.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>Docker</h1>
               </div>
             </div>
@@ -77,17 +86,17 @@ const AboutMe = () => {
             <div className='flex flex-col justify-center space-y-2 lg:space-y-4 w-full'>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-sky-400 p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/mongodb.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/mongodb.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>MongoDB</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/git-icon.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/git-icon.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg'>Git</h1>
               </div>
 
               <div className='flex flex-col justify-center items-center rounded-lg  border-white p-1 space-y-1 transition duration-300 ease-in-out transform hover:scale-110'>
-                <img src='./PersonalSite/images/skills/typescript.svg' className='h-[30px] md:h-[40px]'/>
+                <img src='./PersonalSite/images/skills/typescript.svg' className='h-[30px] md:h-[40px]' />
                 <h1 className='text-sm md:text-lg '>Typescript</h1>
               </div>
 
@@ -97,7 +106,7 @@ const AboutMe = () => {
 
         </div>
 
-      </div>
+      </motion.div >
     </>
   )
 }

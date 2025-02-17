@@ -44,11 +44,12 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
 
     const [showMenu, setShowMenu] = useState(false);
 
+    
     const handleClick = (div: string) => {
         document.getElementById(div)?.scrollIntoView({ behavior: 'smooth' });
-        setCurrentPage(div)
-    };
+        setCurrentPage(div);
 
+    };
 
     const toggleBurgerMenu = () => {
         setShowMenu(prev => !prev)
@@ -59,12 +60,15 @@ const Navbar = ({ currentPage, setCurrentPage }: NavProps) => {
         <>
             <header className="flex justify-center items-center w-full text-white py-6 px-10 bg-[#222831] drop-shadow-md ">
 
-                <button className="flex mr-auto" onClick={() => handleClick('home')}>
+                <button className="flex mr-auto" onClick={() => {
+                    handleClick('home');
+                    toggleBurgerMenu();
+                }}>
                     <h1 className='text-base lg:text-2xl font-bold'>Michael A Lleverino</h1>
                 </button>
 
                 <div className='hidden md:flex gap-10'>
-                    <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} handleClick={handleClick}/>
+                    <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} handleClick={handleClick} />
                 </div>
 
 
