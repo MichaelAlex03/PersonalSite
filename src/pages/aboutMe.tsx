@@ -1,67 +1,23 @@
-import { motion, useScroll, useInView, useAnimation, useTransform } from 'framer-motion';
-import { useRef, useEffect } from 'react';
-
 const AboutMe = () => {
-
-  const containerRef = useRef(null);
-
-  const isInView = useInView(containerRef, { once: true })
-  const mainControls = useAnimation();
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end end"], //Track from when the start of the elements hits the end of the viewport and stop when the end of the element hits the end
-  })
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible")
-    }
-  }, [isInView])
-
-  const profileImageTransition = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["-40%", "0%"]
-  )
-
-  const skillsTransition = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["40%", "0%"]
-  )
-
 
   return (
 
-    <motion.div
+    <div
       className=' bg-[#222831] text-white w-full py-20 px-8 2xl:px-2 flex flex-col items-center'
-      ref={containerRef}
     >
 
-      <motion.div
-        animate={mainControls}
-        initial="hidden"
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
-        transition={{ duration: 2 }}
+      <div
         className='flex flex-col items-center mt-5 xl:mt-10'
       >
         <h1 className='text-4xl lg:text-6xl font-bold'>About <span className='text-[#55E5A4]'>Me</span></h1>
         <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 mt-1'></div>
-      </motion.div>
+      </div>
 
       {/*Container with both skills and about me description w/ profile picture*/}
       <div className='flex flex-col xl:flex-row items-center justify-center space-y-6 mt-10'>
 
         {/*About me decription and profile picture*/}
-        <motion.div
-          style={{ translateX: profileImageTransition }}
+        <div
           className='flex flex-col items-center gap-4 mt-5 w-full'
         >
 
@@ -74,11 +30,10 @@ const AboutMe = () => {
             </button>
           </div>
 
-        </motion.div>
+        </div>
 
         {/*Skills*/}
-        <motion.div
-          style={{ translateX: skillsTransition }}
+        <div
           className='flex flex-row justify-evenly items-center w-full md:w-3/5 lg:w-2/3 xl:w-3/4 py-6 px-2'
         >
 
@@ -146,11 +101,11 @@ const AboutMe = () => {
 
           </div>
 
-        </motion.div>
+        </div>
 
       </div>
 
-    </motion.div >
+    </div >
 
   )
 }
