@@ -30,6 +30,7 @@
     @apply content-[''] bg-[#a8a7a7] h-[3px] w-[0] left-[50%] -bottom-[5px] translate-x-[-50%] absolute duration-300
   }
 
+  /*Create the after element and makes it expand slightly wider than root element*/
   .nav:hover::after{
     @apply w-[115%] bg-[#a8a7a7]
   }
