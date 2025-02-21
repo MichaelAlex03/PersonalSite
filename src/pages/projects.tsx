@@ -73,7 +73,7 @@ const Projects = () => {
 
           <ProjectCard
             name="FitTrackr"
-            image="./PersonalSite/images/projectImages/workout.png"
+            image="./images/projectImages/workout.png"
             description="A full-stack workout tracker using React, Node.js, Express, and PostgreSQL. It delivers personalized fitness insights with a sleek, scalable interface enhanced by TailwindCSS and AWS-driven architecture."
             gitHub="https://github.com/MichaelAlex03/FitnessTracker"
             technologies={['react', 'tailwindcss', 'nodejs', 'postgresql', 'Express', 'aws']}
