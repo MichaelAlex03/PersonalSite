@@ -41,7 +41,7 @@ const Home = () => {
                             transition={{ duration: .75 }}
                             className='text-center text-base md:text-2xl lg:text-3xl'
                         >
-                            Aspiring full-stack developer creating dynamic, user-focused web apps
+                            Full-stack developer creating dynamic, user-focused web apps
                         </motion.h3>
                         <motion.div
                             initial={{ opacity: 0, y: 100 }}
