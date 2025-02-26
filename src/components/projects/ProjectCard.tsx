@@ -29,10 +29,10 @@ const ProjectCard = ({ name, image, description, link, technologies, gitHub}: Ca
 
 
                 <div className='flex flex-row gap-6 mt-4'>
-                    <button className=' text-sm md:text-base border border-white text-white font-semibold hover:text-black hover:bg-[#55E5A4] py-2 px-4 transition duration-300 ease-in-out transform'>
+                    <button className=' text-xs md:text-base border border-white text-white font-semibold hover:text-black hover:bg-[#55E5A4] py-2 px-4 transition duration-300 ease-in-out transform'>
                         <a href={gitHub} target="_blank">Source Code</a>
                     </button>
-                    {link ? <button className='text-sm md:text-base border border-white text-white font-semibold hover:text-black hover:bg-[#55E5A4] py-2 px-4 transition duration-300 ease-in-out transform'><a href={link} target='_blank'>Live Site</a></button> : null}
+                    {link ? <button className='text-xs md:text-base border border-white text-white font-semibold hover:text-black hover:bg-[#55E5A4] py-2 px-4 transition duration-300 ease-in-out transform'><a href={link} target='_blank'>Live Site</a></button> : null}
                 </div>
             </div>
 
