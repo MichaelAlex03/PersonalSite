@@ -59,7 +59,7 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-2 w-3/4 xl:w-[70%] 2xl:w-[65%] gap-10'>
+        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 md:grid-cols-2 px-0 md:px-6 xl:px-0 w-5/6 md:w-full xl:w-[70%] 2xl:w-[65%] gap-10 md:gap-6 lg:gap-10'>
           <ProjectCard
             name="Nasa Control Center"
             image="./images/projectImages/NASA.png"
