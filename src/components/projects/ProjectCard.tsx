@@ -1,6 +1,3 @@
-import SkillsIcon from "../skills/SkillsIcon"
-
-
 interface CardProps {
     name: string,
     image: string,
@@ -13,15 +10,15 @@ interface CardProps {
 
 const ProjectCard = ({ name, image, description, link, technologies, gitHub}: CardProps) => {
     return (
-        <div className='flex flex-col rounded-md w-full bg-[#26313F] transition transform hover:-translate-y-4 hover:border-2 hover:border-[#4a678d] duration-500 ease-in-out border-[#4a678d]'>
+        <div className='flex flex-col rounded-md w-full bg-[#26313F] transition duration-300 ease-in-out transform hover:-translate-y-4'>
 
             <div className='w-full'>
                 <img src={image} className='rounded-md'/>
             </div>
 
             <div className='flex flex-col items-center p-5'>
-                <h1 className='font-bold text-left text-xl lg:text-2xl xl:text-xl mt-2'>{name}</h1>
-                <p className='text-left text-[#A9A9A9] text-sm md:text-base lg:text-md xl:text-md mt-4'>{description}</p>
+                <h1 className='font-bold text-center text-xl lg:text-2xl xl:text-3xl mt-2'>{name}</h1>
+                <p className='text-center text-[#A9A9A9] text-sm md:text-base lg:text-lg xl:text-xl mt-4'>{description}</p>
 
                 <h4 className='mt-4 xl:text-lg'>Technologies Used</h4>
                 <div className='flex flex-row gap-4 mt-2'>
