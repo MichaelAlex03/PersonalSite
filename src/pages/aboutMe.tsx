@@ -14,7 +14,7 @@ const AboutMe = () => {
       </div>
 
       {/*Container with both skills and about me description w/ profile picture*/}
-      <div className='flex flex-col xl:flex-row items-center justify-center space-y-6 mt-10 xl:w-11/12'>
+      <div className='flex flex-col xl:flex-row items-center justify-center space-y-6 mt-10 2xl:w-11/12'>
 
         {/*About me decription and profile picture*/}
         <div
@@ -23,7 +23,7 @@ const AboutMe = () => {
 
           <div className='z-0 flex flex-col items-center space-y-6'>
             <img src='./images/profile.jpg' className='rounded-full' />
-            <p className='text-center text-sm md:text-base lg:text-xl md:w-2/3 lg:w-2/3 xl:w-3/5'>I am a full-stack software developer with a bachelor’s degree in computer science from Texas State University. Passionate about building and optimizing web applications, I have a strong foundation in both front-end and back-end technologies such as React, TypeScript, Node.js, and PostgreSQL.  In my free time, I enjoy gaming, working out, climbing, and spending time with friends.</p>
+            <p className='text-center text-sm md:text-base lg:text-xl md:w-2/3 lg:w-2/3 2xl:w-3/5'>I am a full-stack software developer with a bachelor’s degree in computer science from Texas State University. Passionate about building and optimizing web applications, I have a strong foundation in both front-end and back-end technologies such as React, TypeScript, Node.js, and PostgreSQL.  In my free time, I enjoy gaming, working out, climbing, and spending time with friends.</p>
 
             <button className='border border-white text-white py-2 px-4 font-semibold xl:text-lg 2xl:text-xl hover:bg-[#55E5A4] hover:text-black transition duration-300 ease-in-out transform hover:scale-110'>
               <a href="./files/newResume.pdf" download="Resume">Download Resume</a>
