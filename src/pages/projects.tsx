@@ -12,7 +12,7 @@ const Projects = () => {
     <div className='bg-[#222831] text-white flex flex-col items-center gap-8 w-full'>
 
       {/*Header*/}
-      <div className='flex flex-col items-center mt-24 md:mt-5 xl:mt-[8.5rem] mb-2'>
+      <div className='flex flex-col items-center mt-24 md:mt-5 xl:mt-[6rem] mb-2'>
         <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-1 md:mb-0'>Projects</h1>
         <div className='border-[4px] lg:border-[6px] border-[#32a16f] w-3/5 lg:w-3/4 mt-1 lg:mt-3'></div>
       </div>
@@ -59,7 +59,7 @@ const Projects = () => {
 
         {/*NASA Project*/}
 
-        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 md:grid-cols-2 px-0 md:px-6 xl:px-0 w-5/6 md:w-full xl:w-[70%] 2xl:w-[65%] gap-10 md:gap-6 lg:gap-10'>
+        {(showAll || showFullStack) && <div className=' mt-2 lg:mt-4 grid grid-cols-1 md:grid-cols-3 px-0 md:px-6 xl:px-0 w-5/6 md:w-5/6 gap-10 md:gap-6 lg:gap-8'>
           <ProjectCard
             name="Nasa Control Center"
             image="./images/projectImages/NASA.png"
